@@ -3,6 +3,9 @@
 \let\footruleskip\undefined % see http://tex.stackexchange.com/questions/37868/fancyhdr-and-memoir
 \usepackage{fancyhdr} % For headers and footers
 \usepackage{listings} % Required for insertion of code
+\lstset{
+    literate={~} {$\sim$}{1} % set tilde as a literal (no process)
+}
 \usepackage{courier}  % Required for the courier font
 \usepackage[usenames,dvipsnames]{color} % Required for custom colors
 \usepackage[table]{xcolor}
@@ -124,9 +127,9 @@ Example Workshop Author, Contributers etc\\
 
 % disables chapter, section and subsection numbering
 % and number figures and tables consecutively throughout the document
-\setcounter{secnumdepth}{-1}
-\counterwithout{figure}{chapter}
-\counterwithout{table}{chapter}
+%\setcounter{secnumdepth}{-1}
+%\counterwithout{figure}{chapter}
+%\counterwithout{table}{chapter}
 
 
 % This allows stuff on the same line to be vertically centered with respect of each other
